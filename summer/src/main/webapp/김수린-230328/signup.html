@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>회원가입</title>
+</head>
+<body>
+<form action="signupResult.jsp" method="post">
+
+	<h1>회원가입</h1>
+	
+	<div style="line-height:200%; font-size:15px; text-align: left;">
+	  이 름:<br>
+	  <input type='text' name='name' required><br>
+	  이메일:<br>
+	  <input type='text' name='email' required><br>
+	  비밀번호:<br>
+	  <input type="password" name="pwd" required><br>
+	  
+	  남 <input name="gender" type="radio" value="남">
+      여 <input name="gender" type="radio" value="여">
+	  <br>
+	
+	  주소지:<br>
+	  <select size="4" name="adress">
+  	    <option value="서울" selected>서울</option>
+        <option value="부산">부산</option>
+        <option value="경기">경기</option>
+        <option value="기타">기타</option>
+      </select>
+      <br>
+      
+      취미:<br>
+      운동<input type="checkbox" name="hobby" value="운동">
+      그림<input type="checkbox" name="hobby" value="그림">
+      영화<input type="checkbox" name="hobby" value="영화">
+      독서<input type="checkbox" name="hobby" value="독서"> (중복 선택 O)
+    </div>
+    
+    <br>
+	<input type="submit" value="가입">
+</form>
+
+</body>
+</html>
